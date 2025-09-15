@@ -5,7 +5,7 @@ import values from "../validations.js"
 
 export const signup = async (req, res) => {
     try{
-       const { firstName, lastName, email, password } = req.body; // ✅ add this line
+       const { firstName, lastName, email, password } = req.body; 
 
         const validateInput = values.safeParse(req.body);
         
